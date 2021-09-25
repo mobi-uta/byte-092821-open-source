@@ -2,7 +2,9 @@
   "name": "byte-092821-open-source",
   "version": "1.0.0",
   "description": "Mobi Byte Workshop - Learn Open Source in an Hour",
-  "devDependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
   "scripts": {
     "start": "eleventy --serve --input='./src'",
     "build": "eleventy"
