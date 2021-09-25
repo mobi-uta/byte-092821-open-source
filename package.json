@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "eleventy --serve --input='./src'",
-    "build": "eleventy"
+    "build": "eleventy --input='./src'"
   },
   "repository": {
     "type": "git",
