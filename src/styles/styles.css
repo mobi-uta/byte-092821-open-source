@@ -37,6 +37,15 @@ footer {
   color: var(--text-light);
 }
 
+a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text-light);
+}
+
 /* Styles */
 .title {
   margin: var(--base-d);
@@ -45,13 +54,52 @@ footer {
   color: var(--text-light);
 }
 
+.post__grid {
+  margin: var(--base-d) auto;
+  overflow: visible;
+
+  width: 90%;
+
+  display: grid;
+
+  grid-auto-rows: auto;
+  grid-template-columns: auto;
+
+  gap: var(--base-d);
+}
+
+@media screen and (min-width: 576px) {
+  .post__grid {
+    grid-template-columns: repeat(2, auto);
+
+    gap: calc(var(--base-d) * 2);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .post__grid {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .post__grid {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
 .post {
+  position: relative;
+
   background: var(--text-light);
 
-  margin: var(--base-d);
+  margin: auto;
   padding: calc(var(--base-d) * 1.5);
 
+  max-width: calc(var(--base-d) * 15);
+
   overflow-wrap: break-word;
+  overflow: visible;
 }
 
 /* Inner Div Clips Content */
@@ -60,4 +108,15 @@ footer {
   text-overflow: ellipsis;
 
   max-height: calc(var(--base-d) * 10);
+}
+
+/* Responsive */
+@media screen and (min-width: 992px) {
+  .title {
+    margin: calc(var(--base-d) * 3);
+  }
+
+  footer {
+    margin: calc(var(--base-d) * 3);
+  }
 }
