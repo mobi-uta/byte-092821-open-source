@@ -1,0 +1,39 @@
+/* Imports */
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&family=Syncopate:wght@700&display=swap");
+
+/* Resets */
+* {
+  box-sizing: border-box;
+
+  /* Colors */
+  --background-color: #788eff;
+
+  /* Typography */
+  font-family: "Syncopate", "Reggae One", sans-serif;
+  text-transform: uppercase;
+
+  /* Dimensions */
+  --base-d: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+body main {
+  flex-grow: 1;
+}
+
+footer {
+  margin: var(--base-d);
+}
+
+/* Styles */
+.title {
+  margin: var(--base-d);
+  margin-bottom: calc(var(--base-d) * 2);
+}
