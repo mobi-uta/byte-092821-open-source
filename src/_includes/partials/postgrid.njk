@@ -1,0 +1,5 @@
+{%- for post in collections.post -%}
+<article class="post"><div>
+    <div>{{ post.templateContent | safe }}</div>
+</div></article>
+{%- endfor -%}

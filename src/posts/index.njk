@@ -4,7 +4,5 @@ eleventyExcludeFromCollections: true
 <h1>Posts</h1>
 
 <section>
-    {%- for post in collections.post -%}
-    <article>{{ post.templateContent | safe }}</article>
-    {%- endfor -%}
+{% include "partials/postgrid.njk" %}
 </section>

@@ -8,6 +8,7 @@
 
   /* Colors */
   --background-color: #788eff;
+  --text-light: #eaeaea;
 
   /* Typography */
   font-family: "Syncopate", "Reggae One", sans-serif;
@@ -22,6 +23,8 @@ body {
   flex-direction: column;
 
   min-height: 100vh;
+
+  background: var(--background-color);
 }
 
 body main {
@@ -30,10 +33,31 @@ body main {
 
 footer {
   margin: var(--base-d);
+
+  color: var(--text-light);
 }
 
 /* Styles */
 .title {
   margin: var(--base-d);
   margin-bottom: calc(var(--base-d) * 2);
+
+  color: var(--text-light);
+}
+
+.post {
+  background: var(--text-light);
+
+  margin: var(--base-d);
+  padding: calc(var(--base-d) * 1.5);
+
+  overflow-wrap: break-word;
+}
+
+/* Inner Div Clips Content */
+.post > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-height: calc(var(--base-d) * 10);
 }
