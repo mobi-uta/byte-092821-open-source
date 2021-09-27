@@ -1,7 +1,9 @@
 <div class="post__grid">
     {%- for post in collections.post -%}
     <a class="post__link" href="{{ post.url }}">
-        <article class="post" style="background: {{post.data.color}}; border-radius: {{post.data.curve}}px;transform: rotate({{post.data.rotate}}deg);"><div>
+        <article class="post" style="background: {{post.data.color}}; border-radius: {{post.data.curve}}px;transform: rotate({{post.data.rotate}}deg);
+            {{ 'left:' | randomRange(-5, 5) }}vw; {{ 'right:' | randomRange(-5, 5) }}vw;
+        "><div>
             <div>{{ post.templateContent | safe }}</div>
         </div></article>
     </a>

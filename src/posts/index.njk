@@ -6,7 +6,9 @@ eleventyExcludeFromCollections: true
     <h1 class="title text-center">Posts</h1>
 {% for post in collections.post %}
     <a class="post__link" href="{{ post.url }}">
-        <article class="page__container" style="background: {{ post.data.color }}; transform: rotate({{ (post.data.rotate - 0)/(360 - 0) * 10 }}deg);">
+        <article class="page__container" style="background: {{ post.data.color }}; transform: rotate({{ (post.data.rotate - 0)/(360 - 0) * 10 }}deg); position: relative;
+            {{ 'left:' | randomRange(-5, 5) }}vw; {{ 'right:' | randomRange(-5, 5) }}vw;
+        ">
             {{ post.templateContent | safe }}
         </article>
     </a>
