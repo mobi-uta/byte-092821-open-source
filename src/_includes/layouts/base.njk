@@ -1,3 +1,6 @@
+---
+title: Mobi Stan Aggregator
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,11 +14,20 @@
 
 <body>
     <header>
-        <div class="title"><a href="https://utamobi.com">Mobi</a></div>
+        <nav class="title">
+            <ul>
+                <li><a href="/">We Stan</a></li>
+                {% if page.url %}
+                <li>
+                    <a href="javascript:history.back()">Back</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
     </header>
     <main>{{ content | safe }}</main>
     <footer>
-        &copy; 2021 
+        &copy; 2021 <a href="https://utamobi.com">Mobi</a> 
     </footer>
 </body>
 

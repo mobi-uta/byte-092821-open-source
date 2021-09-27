@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+<div class="page__container" style="background: {{ color }}; transform: rotate({{ (rotate - 0)/(360 - 0) * 10 }}deg);">
+    <section class="container">
+        {{ content | safe }}
+    </section>
+</div>

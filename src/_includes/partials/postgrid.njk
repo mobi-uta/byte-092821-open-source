@@ -1,7 +1,9 @@
 <div class="post__grid">
     {%- for post in collections.post -%}
-    <article class="post" style="background: {{post.data.color}}; border-radius: {{post.data.curve}}px;transform: rotate({{post.data.rotate}}deg);"><div>
-        <div>{{ post.templateContent | safe }}</div>
-    </div></article>
+    <a class="post__link" href="{{ post.url }}">
+        <article class="post" style="background: {{post.data.color}}; border-radius: {{post.data.curve}}px;transform: rotate({{post.data.rotate}}deg);"><div>
+            <div>{{ post.templateContent | safe }}</div>
+        </div></article>
+    </a>
     {%- endfor -%}
 </div>
