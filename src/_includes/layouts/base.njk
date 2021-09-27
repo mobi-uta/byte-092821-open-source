@@ -13,11 +13,12 @@ title: Mobi Stan Aggregator
 </head>
 
 <body>
-    <header>
-        <nav class="title">
+    <header class="title">
+        <nav>
             <ul>
                 <li><a href="/">We Stan</a></li>
-                {% if page.url %}
+                <li><a href="/posts">Posts</a></li>
+                {% if page.url !== "/"%}
                 <li>
                     <a href="javascript:history.back()">Back</a>
                 </li>
@@ -26,7 +27,7 @@ title: Mobi Stan Aggregator
         </nav>
     </header>
     <main>{{ content | safe }}</main>
-    <footer>
+    <footer class="title">
         &copy; 2021 <a href="https://utamobi.com">Mobi</a> 
     </footer>
 </body>

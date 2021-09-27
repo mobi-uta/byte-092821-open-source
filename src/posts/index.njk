@@ -2,7 +2,13 @@
 layout: layouts/base.njk
 eleventyExcludeFromCollections: true
 ---
-<section class="container">
-<h1 class="title">Posts</h1>
-{% include "partials/postgrid.njk" %}
+<section class="container mx-auto">
+    <h1 class="title text-center">Posts</h1>
+{% for post in collections.post %}
+    <a class="post__link" href="{{ post.url }}">
+        <article class="page__container" style="background: {{ post.data.color }}; transform: rotate({{ (post.data.rotate - 0)/(360 - 0) * 10 }}deg);">
+            {{ post.templateContent | safe }}
+        </article>
+    </a>
+{% endfor %}
 </section>
