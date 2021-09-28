@@ -3,3 +3,7 @@ My favorite TV shows are Community, Breaking Bad, and Better Call Saul. I haven'
 
 # Food
 Yes. Specifically cheese and chocolate.
+
+# Code
+Unsurprisingly, <code>I like code.</code> <br>
+TypeScript >>> JavaScript (don't @ me)
