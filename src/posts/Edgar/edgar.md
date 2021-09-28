@@ -1,14 +1,11 @@
 ---
 rotate: 10
 curve: 4
-color: "#335c67"
+color: "#f7fdce"
 ---
 
-I stan the Dallas Cowboys!
+I love color :)
 
-# Go Cowboys
-# Go Cowboys
-# Go Cowboys
-# Go Cowboys
+
 
 
