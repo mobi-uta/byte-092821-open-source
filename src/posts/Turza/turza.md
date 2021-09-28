@@ -1,7 +1,7 @@
 ---
 rotate: 10
 curve: 5
-color: 00FF00
+color: "green"
 ---
 ## I love The Office, Parks and Rec, Better Call Saul.
 
