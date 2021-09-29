@@ -1,5 +1,9 @@
+---
+rotate: 45
+curve: 5
+color: orange
+---
 My favorite kind of food is Mexican
 
-# Especially like the tex mex mexican
 # SO. MUCH. CHEESE.
 # also salsa
